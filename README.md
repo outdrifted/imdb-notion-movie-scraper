@@ -2,10 +2,11 @@
 
 A C# app that gets information about movies/series from IMDb, then updates Notion page with the gathered new information.
 
-### Prerequisites
+### Prerequisites to run the code
 
-- Google Chrome. You can change it in the code to Firefox or other browsers, when initializing Selenium.
-- Visual Studio (not Code) - If you want to run the code yourself.
+- Google Chrome - You can change it in the code to Firefox or other browsers, when initializing Selenium.
+- Visual Studio (not Code). Installer: ".NET desktop development", Template: "Console App (.NET Framework)" 
+- Selenium.WebDriver & DotNetSeleniumExtras.WaitHelpers - Install through Visual Studio NuGet Package Manager
 
 ### How it works
 
