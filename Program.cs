@@ -319,38 +319,10 @@ namespace IMDB_Scraper
             Description = description;
             URL = url;
 
-            for (int i = 0; i < genres.Count; i++)
-            {
-                Genres.Add(genres[i]);
-            }
-
-            for (int i = 0; i < directors.Count; i++)
-            {
-                Directors.Add(directors[i]);
-            }
-
-            for (int i = 0; i < writers.Count; i++)
-            {
-                Writers.Add(writers[i]);
-            }
-
-            for (int i = 0; i < stars.Count; i++)
-            {
-                Stars.Add(stars[i]);
-            }
-        }
-
-        public void Print()
-        {
-            Console.WriteLine("Year: " + Year);
-            Console.WriteLine("Type: " + Type);
-            Console.WriteLine("Description: " + Description);
-            Console.WriteLine("URL: " + URL);
-            Console.WriteLine("Genres: " + string.Join(", ", Genres));
-            Console.WriteLine("Directors: " + string.Join(", ", Directors));
-            Console.WriteLine("Writers: " + string.Join(", ", Writers));
-            Console.WriteLine("Stars: " + string.Join(", ", Stars));
-            Console.WriteLine();
+            for (int i = 0; i < genres.Count; i++) Genres.Add(genres[i]);
+            for (int i = 0; i < directors.Count; i++) Directors.Add(directors[i]);
+            for (int i = 0; i < writers.Count; i++) Writers.Add(writers[i]);
+            for (int i = 0; i < stars.Count; i++) Stars.Add(stars[i]);
         }
 
         public enum ContentType { Movie, Series, Default }
